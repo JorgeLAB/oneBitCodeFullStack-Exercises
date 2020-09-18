@@ -1,0 +1,1 @@
+console.log("Foi realizada a compilação com sucesso o arquivo galaxy foi transpilado para a pasta dist")
