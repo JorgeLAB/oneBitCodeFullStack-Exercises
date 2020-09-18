@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log(\"Foi realizada a compilação com sucesso o arquivo galaxy foi transpilado para a pasta dist\")\n\n//# sourceURL=webpack:///./src/galaxy.js?");
+eval("console.log(\"Foi realizada a compilação com sucesso o arquivo galaxy foi transpilado para a pasta dist\");\n\n//# sourceURL=webpack:///./src/galaxy.js?");
 
 /***/ })
 
