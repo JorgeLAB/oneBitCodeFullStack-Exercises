@@ -18,7 +18,20 @@ async function loadNeos(){
 	
 		neos.push(newNeo);
 	})
-	console.log(neos);
+	renderNeo(neos);
 }
+
+
+function renderNeo(neos){
+	const ulElement = document.getElementById("neos-list"); 
+
+	neos.forEach(neo => {
+		const liElement = document.createElement("li");
+		const isSentry = neo.isSentry ? "Perigo de colisão" : "Sem perigo de colisão" ;
+		const text = `${neo.id} | ${neo.name} | ${neo.averageEstimateDiameter} | ${neo.isSentry}`;
+		liElement.innerText= text;
+		ulElement.appendChild(liElement);
+	})
+} 
 
 loadNeos();
