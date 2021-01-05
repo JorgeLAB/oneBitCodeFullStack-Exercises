@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Enviando dom</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+	<script src="./js/eventos.js"></script>
+</head>
+<body>
+	<form>
+		<p>
+			<label> Nome: </label>
+			<input type="text" name="first-name" onchange="myFirstName(this)">
+		</p>
+
+		<p>
+			<label> Ultimo Nome: </label>
+			<input type="text" name="last-name" onchange="myLastName()">
+		</p>
+	</form>
+</body>
+</html>

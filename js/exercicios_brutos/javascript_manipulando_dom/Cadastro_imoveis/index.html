@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cadastrar casas</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+	<link rel="stylesheet" href="./stylesheet/style.css">
+	<script src="./js/eventos.js"></script>
+</head>
+<body>
+	<div class="section">
+		<div class="container" >
+			<h1 class="title">Cadastrando casas</h1>
+			<form id="cadastroCasas" onsubmit="mostrarResultado()">
+				<div class="field">
+				  <label class="label" for="numeroResidencial">Número da Residência</label>
+				  <div class="control">
+				    <input class="input" type="text" name="numeroResidencial" id="teste1" placeholder="Número da Residência">
+				  </div>
+				</div>
+				<div class="field">
+				  <label class="label" for="bairro">Bairro</label>
+				  <div class="control">
+				    <input class="input" type="text" name="bairro" placeholder="Bairro" value="">
+				  </div>
+				</div>
+				<div class="field">
+				  <label class="label" for="cidade">Cidade</label>
+				  <div class="control">
+				    <input class="input" type="text" name="cidade" placeholder="Cidade" value="">
+				  </div>
+				</div>
+				<div class="field">
+				  <label class="label" for="areaCasa">Área da casa</label>
+				  <div class="control">
+				    <input class="input" type="text" name="areaCasa" placeholder="Area da casa" value="">
+				  </div>
+				</div>
+				<div class="control">
+				  <button class="button is-primary" type="submit" onclick="adicionarCasa()">Adicionar</button>
+				</div>
+			</form>
+			<div class='content'>
+				<div id="lista_de_casas">
+					<ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
